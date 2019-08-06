@@ -87,8 +87,10 @@ courtsRouter
             req.params.court_id,
             courtToUpdate
         )
-            .then(numRowsAffected => {
-                res.status(204).end()
+            .then(court => {
+                res
+                    .status(200)
+                    .json(serializeCourt(court[0]))
             })
             .catch(next)
     })

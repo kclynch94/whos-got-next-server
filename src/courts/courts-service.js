@@ -22,7 +22,7 @@ const CourtsService = {
     updateCourt(knex, id, newCourtFields) {
         return knex('courts')
         .where({ id })
-        .update(newCourtFields)
+        .update(newCourtFields, ['id','court_name', 'activegame', 'facility_id'])
     },
 }
 
