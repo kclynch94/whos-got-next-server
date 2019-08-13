@@ -1,26 +1,42 @@
-# Express Boilerplate!
+## Who's Got Next?
 
-This is a boilerplate project used for starting new projects!
+Here is the link to the [live app](https://kclynch94-whos-got-next-app.now.sh/).
 
-## Set up
+## Summary
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+This app is designed to help local backetball players see what courts have active players. In addition to that, it solves the problem of debating 'Who's Got Next?' or what team is next in line to play on a certain court.
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+## API Endpoints
 
-## Scripts
+The base URL of the API is https://sleepy-coast-68561.herokuapp.com/api
 
-Start the application `npm start`
+This API is authenticated so only users with a valid API token will be able to access it.
 
-Start nodemon for the application `npm run dev`
+This API has endpoints for the following:
+* /organizations
+* /teams
+* /courts
+* /facilities
 
-Run the tests `npm test`
+All of the endpoints have CRUD operations
 
-## Deploying
+### Organizations
+* id
+* org_name
 
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+### Teams
+* id
+* team_name
+* players
+* court_id
+
+### Courts
+* id
+* court_name
+* activegame
+* facility_id
+
+### Facilities
+* id
+* facility_name
+* org_id
