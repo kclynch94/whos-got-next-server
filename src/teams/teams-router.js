@@ -27,7 +27,6 @@ teamsRouter
     })
     .post(jsonParser, (req, res, next) => {
         const { team_name, players, court_id } = req.body
-        console.log('req.body', req.body)
         const newTeam = { team_name, players, court_id }
 
         for (const [key, value] of Object.entries(newTeam))
