@@ -4,7 +4,7 @@ Here is the link to the [live app](https://kclynch94-whos-got-next-app.now.sh/).
 
 ## Summary
 
-This app is designed to help local backetball players see what courts have active players. In addition to that, it solves the problem of debating 'Who's Got Next?' or what team is next in line to play on a certain court.
+This app is designed to help local basketball players see what courts have active players. In addition to that, it solves the problem of debating 'Who's Got Next?' or what team is next in line to play on a certain court.
 
 ## API Endpoints
 
